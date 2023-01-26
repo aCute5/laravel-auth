@@ -19,8 +19,8 @@ class PostSeeder extends Seeder
                 'slug' => $title,
                 'title' => $title,
                 'image' => 'https://picsum.photos/id/' . rand(0, 1000) . '/500/400',
-                'content' => $faker->paragraphs(rand(1, 10), true),
-                'excerpt' => $faker->paragraphs(),
+                'content' => $faker->paragraph(rand(1, 10), true),
+                'excerpt' => $faker->paragraph(),
             ]);
         }
     }
